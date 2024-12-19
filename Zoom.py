@@ -72,7 +72,10 @@ if __name__ == "__main__":
     bird_enclosure.add_animal(eagle)
  
     zoo.add_enclosure(bird_enclosure)
- 
-    zoo.daily_report()
-    bird_enclosure.feed_animals()
+
+
+    print("Enclosures in the zoo:")
+    for enclosure in zoo.enclosures:
+        print(enclosure)
+
     zoo.daily_report()
